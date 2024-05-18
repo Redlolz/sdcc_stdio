@@ -2,6 +2,7 @@
 #define _TYPES_H_
 
 #include <stddef.h>
+#include <stdbool.h>
 
 #define true 1
 #define false 0
@@ -11,7 +12,6 @@
 typedef unsigned char uchar;
 typedef unsigned int uint;
 typedef unsigned short ushort;
-typedef unsigned char bool;
 typedef unsigned long ulong;
 typedef long fpos_t;
 typedef unsigned short uintptr_t;
