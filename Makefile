@@ -18,7 +18,6 @@ endif
 
 ifeq ($(EXCLUDE_SCANF), true)
 	CFLAGS += -DEXCLUDE_SCANF
-	EXCLUDE_ERRNO = true
 else
 	C_SOURCES += scanf.c
 endif

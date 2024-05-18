@@ -21,22 +21,28 @@ void perror ( const char * str )
 		case EOK:
 			break;
 		case EPERM:
-			eprintf("\n\rERRNO(%d) - Operation not permitted: %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - Operation not permitted: %s\n\r",
+				errno, str);
 		break;
 		case ENOENT:
-			eprintf("\n\rERRNO(%d) - No such file or directory: %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - No such file or directory: %s\n\r",
+				errno, str);
 		break;
 		case EIO:
-			eprintf("\n\rERRNO(%d) - Input/output error: %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - Input/output error: %s\n\r",
+				errno, str);
 		break;
 		case EBADF:
-			eprintf("\n\rERRNO(%d) - Bad file descriptor: %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - Bad file descriptor: %s\n\r",
+				errno, str);
 		break;
 		case EOPNOTSUPP:
-			eprintf("\n\rERRNO(%d) - Operation not supported %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - Operation not supported %s\n\r",
+				errno, str);
 		break;
 		default:
-			eprintf("\n\rERRNO(%d) - Unknown error: %s\n\r", errno, str);
+			fprintf(stderr, "\n\rERRNO(%d) - Unknown error: %s\n\r",
+				errno, str);
 		break;
 
 	}

@@ -95,7 +95,6 @@ int sscanf(const char *ibuf, const char *fmt, ...);
 int vsscanf(const char *inp, char const *fmt0, va_list ap);
 int vfscanf ( FILE * stream, const char * format, va_list arg );
 int fscanf ( FILE * stream, const char * format, ... );
-#define eprintf(...) fprintf (stderr, __VA_ARGS__);
 #endif /* EXCLUDE_SCANF */
 
 #endif
